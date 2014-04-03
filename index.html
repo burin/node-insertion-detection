@@ -9,8 +9,10 @@
 
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-
+        <script>console.time('footer');</script>
+        <script src="js/performance_now_polyfill.js"></script>
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/node_insertion_detection.js"></script>
     </head>
     <body>
 
@@ -57,7 +59,7 @@
             </div> <!-- #main -->
         </div> <!-- #main-container -->
 
-        <div class="footer-container">
+        <div class="footer-container" data-timing="footer">
             <footer class="wrapper">
                 <h3>footer</h3>
             </footer>
