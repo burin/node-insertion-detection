@@ -7,59 +7,54 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <script>console.time('footer');</script>
         <script src="js/performance_now_polyfill.js"></script>
-        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
         <script src="js/node_insertion_detection.js"></script>
     </head>
     <body>
 
-        <div class="header-container">
-            <header class="wrapper clearfix">
-                <h1 class="title">h1.title</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                        <li><a href="#">nav ul li a</a></li>
-                    </ul>
-                </nav>
-            </header>
+        <header>
+            <button id="btn-insert-at-once">Insert AtOnce</button>
+            <button id="btn-insert-looping">Insert Looping</button>
+            <button id="btn-insert-at-once-no-css">Insert AtOnce no css</button>
+            <button id="btn-insert-looping-no-css">Insert Looping No css</button>
+        </header>
+
+        <div id="viewport">
+            <div class="app-header">
+                <div class="header">
+                    <div class="primary-actions">
+                        <button class="button back left"><span class="btn_icon_back_25px button-icon"></span></button>
+                    </div>
+                    <div class="titles">
+                        <span class="title">Always Share Help</span>
+                    </div>
+                    <div class="secondary-actions">
+                    </div>
+                </div>
+
+            </div>
+            <div id="app-page">
+                <div id="simple">
+                    <div class="content">
+                        <div>
+                            <div class="instruction">
+                                <p class="instruction-info">Always Share lets you automatically share your trips with a trusted member of
+                                    your Contact List. By checking this option, the contact will receive email itinerary updates on any active
+                                    trips already in your account as well as any new trips you add in the future.</p>
+
+                                <p class="instruction-info">Always Share contacts do not automatically receive flight updates.</p>
+
+                                <p class="instruction-info">You can turn off Always Share at any time.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="main-container">
-            <div class="main wrapper clearfix">
 
-                <article>
-                    <header>
-                        <h1>article header h1</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec.</p>
-                    </header>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <section>
-                        <h2>article section h2</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices. Proin in est sed erat facilisis pharetra.</p>
-                    </section>
-                    <footer>
-                        <h3>article footer h3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor.</p>
-                    </footer>
-                </article>
-
-                <aside>
-                    <h3>aside</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor. Nunc vel vehicula ante. Etiam bibendum iaculis libero, eget molestie nisl pharetra in. In semper consequat est, eu porta velit mollis nec. Curabitur posuere enim eget turpis feugiat tempor. Etiam ullamcorper lorem dapibus velit suscipit ultrices.</p>
-                </aside>
-
-            </div> <!-- #main -->
-        </div> <!-- #main-container -->
-
-        <div class="footer-container" data-timing="footer">
+        <div class="footer-container" data-load-timing="footer">
             <footer class="wrapper">
                 <h3>footer</h3>
             </footer>

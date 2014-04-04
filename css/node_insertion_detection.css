@@ -43,7 +43,7 @@
     }
 }
 
-[data-timing] {
+[data-timing],[data-load-timing] {
     -webkit-animation-name: nodeInserted;
     -moz-animation-name: nodeInserted;
     -ms-animation-name: nodeInserted;
